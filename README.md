@@ -60,8 +60,8 @@ A sleek and responsive GitHub Profile Viewer built with **HTML**, **Tailwind CSS
 
 - [ ] Add loading skeletons while API fetch is in progress
 - [ ] Add pagination for repositories (for users with 100+ repos)
-- [ ] Option to toggle dark/light mode (if required in future)
-- [ ] Mobile responsiveness improvements (optional)
+- [ ] Add hyperlinks to repositories
+- [ ] Mobile responsiveness improvements
 
 ---
 
