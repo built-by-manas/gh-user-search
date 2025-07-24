@@ -31,7 +31,7 @@ A sleek and responsive GitHub Profile Viewer built with **HTML**, **Tailwind CSS
 
 ## 📸 Demo
 
-> _Include a live demo link or screenshots here if hosting is available._
+> _<to be added>_
 
 ---
 
