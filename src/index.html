@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Git User</title>
+</head>
+<body class="bg-[#060131] text-white">
+    <!-- nav -->
+    <div class="border-b-[#292929] border-b-3 h-20 w-full overflow-hidden flex box-border pt-3 pb-3 justify-evenly items-center">
+        <div class="flex items-center overflow-hidden h-full space-x-4">
+            <img src="assets/github-logo.svg" class="h-full" alt="">
+            <h1 class="text-2xl">GitHub User Search</h1>
+        </div>
+        <form role="search" onsubmit="handleSearch(event)" class="relative">
+            <input type="search" name="q" id="searchInput" placeholder="github username" class="p-4 pr-10 bg-gray-200 text-gray-700 rounded-xl" />
+            <button type="submit" aria-label="Search" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500">
+                <img src="./assets/search-svg.svg" alt="Search" class="h-5 w-5" />
+            </button>
+        </form>
+    </div>
+    <!---->
+
+    <!-- profile -->
+    <div class="profile flex w-full h-[calc(100vh-80px)] p-8 justify-center items-center space-x-6">
+        <!-- image and details -->
+        <div class="flex-col w-[50%] min-w-[50%] max-w-[50%] justify-evenly space-y-8 profile-about bg-[#060131 p-8">
+            <div class="profil-pic flex justify-center items-center bg-[#060131] box-border">
+                <img class="rounded-full object-cover bg-amber-50 h-90 w-90" src="" alt="">
+            </div>
+            <div class="profile-details box-border flex-col space-y-5">
+                <h1 class="name text-4xl text-center">N/A</h1>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3 3 0 100-6 3 3 0 000 6zM12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                    </svg>
+                    <h1 class="text-xl location">N/A</h1>
+                </div>
+                <div class="bio bg-[#242424] text-gray-300 italic p-4 rounded-lg border border-[#2e2e2e] break-words">
+                    <p>“N/A”</p>
+                </div>
+                <div class="social flex items-center justify-evenly space-x-8 mt-6 h-30 box-border p-4 border-amber-100 border-2 rounded-2xl">
+                    <h1>Followers: N/A</h1>
+                    <h1>Following: N/A</h1>
+                    <h1>Public Repos: N/A</h1>
+                </div>
+            </div>
+        </div>
+        <!---->
+
+        <!-- repo list -->
+        <div class="repo-list w-[50%] min-w-[50%] max-w-[50%] h-full overflow-y-auto px-6 py-4 space-y-4 bg-[#060131] border-2 border-amber-50 rounded-xl ml-6">
+            <h2 class="text-2xl text-center text-amber-100 font-semibold">Repositories</h2>
+            <div id="repo-container" class="space-y-4">
+                <p class="text-gray-400 italic text-center">No repositories available.</p>
+            </div>
+        </div>
+        <!---->
+    </div>
+    <!---->
+    
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
